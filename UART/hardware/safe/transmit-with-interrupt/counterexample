@@ -1,0 +1,732 @@
+/bin/rm -f rtfSimpleUart.vcd
+hw-cbmc firmware.c rtfSimpleUart.v rtfSimpleUart.v rtfSimpleUartTx.v rtfSimpleUartRx.v edge_det.v --module rtfSimpleUart --bound 10 --aig --vcd rtfSimpleUart.vcd
+HW-CBMC version 5.2
+Parsing firmware.c
+Parsing rtfSimpleUart.v
+Parsing rtfSimpleUart.v
+Parsing rtfSimpleUartTx.v
+Parsing rtfSimpleUartRx.v
+Parsing edge_det.v
+Converting
+Type-checking Verilog::edge_det
+Type-checking Verilog::rtfSimpleUart
+Type-checking Verilog::rtfSimpleUartRx
+Type-checking Verilog::rtfSimpleUartTx
+Type-checking firmware
+Mapping variables
+mapping `rtfSimpleUart.pClkFreq' to `Verilog::rtfSimpleUart.pClkFreq'
+mapping `rtfSimpleUart.pBaud' to `Verilog::rtfSimpleUart.pBaud'
+mapping `rtfSimpleUart.pClkMul' to `Verilog::rtfSimpleUart.pClkMul'
+mapping `rtfSimpleUart.pRts' to `Verilog::rtfSimpleUart.pRts'
+mapping `rtfSimpleUart.pDtr' to `Verilog::rtfSimpleUart.pDtr'
+mapping `rtfSimpleUart.cs' to `Verilog::rtfSimpleUart.cs'
+mapping `rtfSimpleUart.c' to `Verilog::rtfSimpleUart.c'
+mapping `rtfSimpleUart.ck_mul' to `Verilog::rtfSimpleUart.ck_mul'
+mapping `rtfSimpleUart.spr' to `Verilog::rtfSimpleUart.spr'
+mapping `rtfSimpleUart.tx_empty' to `Verilog::rtfSimpleUart.tx_empty'
+mapping `rtfSimpleUart.baud16' to `Verilog::rtfSimpleUart.baud16'
+mapping `rtfSimpleUart.rx_present_ie' to `Verilog::rtfSimpleUart.rx_present_ie'
+mapping `rtfSimpleUart.tx_empty_ie' to `Verilog::rtfSimpleUart.tx_empty_ie'
+mapping `rtfSimpleUart.dcd_ie' to `Verilog::rtfSimpleUart.dcd_ie'
+mapping `rtfSimpleUart.hwfc' to `Verilog::rtfSimpleUart.hwfc'
+mapping `rtfSimpleUart.loopback' to `Verilog::rtfSimpleUart.loopback'
+mapping `rtfSimpleUart.clear' to `Verilog::rtfSimpleUart.clear'
+mapping `rtfSimpleUart.frame_err' to `Verilog::rtfSimpleUart.frame_err'
+mapping `rtfSimpleUart.over_run' to `Verilog::rtfSimpleUart.over_run'
+mapping `rtfSimpleUart.ctsx' to `Verilog::rtfSimpleUart.ctsx'
+mapping `rtfSimpleUart.dcdx' to `Verilog::rtfSimpleUart.dcdx'
+mapping `rtfSimpleUart.dsrx' to `Verilog::rtfSimpleUart.dsrx'
+mapping `rtfSimpleUart.dcd_chg' to `Verilog::rtfSimpleUart.dcd_chg'
+mapping `rtfSimpleUart.rxIRQ' to `Verilog::rtfSimpleUart.rxIRQ'
+mapping `rtfSimpleUart.txIRQ' to `Verilog::rtfSimpleUart.txIRQ'
+mapping `rtfSimpleUart.msIRQ' to `Verilog::rtfSimpleUart.msIRQ'
+mapping `rtfSimpleUart.irqenc' to `Verilog::rtfSimpleUart.irqenc'
+mapping `rtfSimpleUart.rx_do' to `Verilog::rtfSimpleUart.rx_do'
+mapping `rtfSimpleUart.txrx' to `Verilog::rtfSimpleUart.txrx'
+mapping `rtfSimpleUart.txd_int' to `Verilog::rtfSimpleUart.txd_int'
+mapping `rtfSimpleUart.rxd_int' to `Verilog::rtfSimpleUart.rxd_int'
+mapping `rtfSimpleUart.cts_nint' to `Verilog::rtfSimpleUart.cts_nint'
+mapping `rtfSimpleUart.rst_i' to `Verilog::rtfSimpleUart.rst_i'
+mapping `rtfSimpleUart.clk_i' to `Verilog::rtfSimpleUart.clk_i'
+mapping `rtfSimpleUart.cyc_i' to `Verilog::rtfSimpleUart.cyc_i'
+mapping `rtfSimpleUart.stb_i' to `Verilog::rtfSimpleUart.stb_i'
+mapping `rtfSimpleUart.we_i' to `Verilog::rtfSimpleUart.we_i'
+mapping `rtfSimpleUart.adr_i' to `Verilog::rtfSimpleUart.adr_i'
+mapping `rtfSimpleUart.dat_i' to `Verilog::rtfSimpleUart.dat_i'
+mapping `rtfSimpleUart.dat_o' to `Verilog::rtfSimpleUart.dat_o'
+mapping `rtfSimpleUart.ack_o' to `Verilog::rtfSimpleUart.ack_o'
+mapping `rtfSimpleUart.vol_o' to `Verilog::rtfSimpleUart.vol_o'
+mapping `rtfSimpleUart.irq_o' to `Verilog::rtfSimpleUart.irq_o'
+mapping `rtfSimpleUart.cts_ni' to `Verilog::rtfSimpleUart.cts_ni'
+mapping `rtfSimpleUart.rts_no' to `Verilog::rtfSimpleUart.rts_no'
+mapping `rtfSimpleUart.dsr_ni' to `Verilog::rtfSimpleUart.dsr_ni'
+mapping `rtfSimpleUart.dcd_ni' to `Verilog::rtfSimpleUart.dcd_ni'
+mapping `rtfSimpleUart.dtr_no' to `Verilog::rtfSimpleUart.dtr_no'
+mapping `rtfSimpleUart.rxd_i' to `Verilog::rtfSimpleUart.rxd_i'
+mapping `rtfSimpleUart.txd_o' to `Verilog::rtfSimpleUart.txd_o'
+mapping `rtfSimpleUart.data_present_o' to `Verilog::rtfSimpleUart.data_present_o'
+Generating GOTO Program
+The id for the function symbol is code
+The id for the function symbol is code
+The id for the function symbol is code
+The id for the function symbol is code
+The id for the function symbol is code
+The id for the function symbol is code
+The id for the function symbol is code
+Adding CPROVER library
+Function Pointer Removal
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+size of program expression: 541 steps
+simple slicing removed 3 assignments
+Generated 1 VCC(s), 1 remaining after simplification
+Passing problem to propositional reduction
+Unwinding transition system Verilog::rtfSimpleUart with 11 time frames
+General constraints
+Initial state
+Transition relation
+Transition 0->1
+Transition 1->2
+Transition 2->3
+Transition 3->4
+Transition 4->5
+Transition 5->6
+Transition 6->7
+Transition 7->8
+Transition 8->9
+Transition 9->10
+Unwinding transition system done
+converting SSA
+converting constraints
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.0 with simplifier
+15676 variables, 28088 clauses
+SAT checker: negated claim is SATISFIABLE, i.e., does not hold
+restarts              : 1
+conflicts             : 13          
+decisions             : 33          
+propagations          : 10749       
+conflict literals     : 25          
+Runtime decision procedure: 0.074s
+Building error trace
+
+Counterexample:
+
+State 21 file firmware.c line 9 function wb_reset thread 0
+----------------------------------------------------
+  rtfSimpleUart.rst_i=TRUE (00000001)
+
+State 78 file firmware.c line 12 function wb_reset thread 0
+----------------------------------------------------
+  rtfSimpleUart.rst_i=FALSE (00000000)
+
+State 79 file firmware.c line 14 function wb_reset thread 0
+----------------------------------------------------
+  rtfSimpleUart.stb_i=FALSE (00000000)
+
+State 80 file firmware.c line 14 function wb_reset thread 0
+----------------------------------------------------
+  rtfSimpleUart.cyc_i=FALSE (00000000)
+
+Violated property:
+  file firmware.c line 28 function main
+  assertion 0
+  0 != 0
+
+Transition system state 0
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 1
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 1
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 0
+  Verilog::rtfSimpleUart.stb_i = 1
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 0 (00000000000000000000000000000000)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 1
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+Transition system state 1
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 0
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 0
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 0
+  Verilog::rtfSimpleUart.stb_i = 0
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 0 (00000000000000000000000000000000)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 0
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+Transition system state 2
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 0
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 0
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 0
+  Verilog::rtfSimpleUart.stb_i = 0
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 0 (00000000000000000000000000000000)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 0
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+Transition system state 3
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 0
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 0
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 0
+  Verilog::rtfSimpleUart.stb_i = 0
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 0 (00000000000000000000000000000000)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 0
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+Transition system state 4
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 0
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 0
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 0
+  Verilog::rtfSimpleUart.stb_i = 0
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 0 (00000000000000000000000000000000)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 0
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+Transition system state 5
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 1
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 0
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 1
+  Verilog::rtfSimpleUart.stb_i = 1
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 'hDFDC0A02 (11011111110111000000101000000010)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 1
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+Transition system state 6
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 1
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 0
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 1
+  Verilog::rtfSimpleUart.stb_i = 1
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 'hFBDC0A02 (11111011110111000000101000000010)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 1
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+Transition system state 7
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 1
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 0
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 1
+  Verilog::rtfSimpleUart.stb_i = 1
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 'hFFDC0805 (11111111110111000000100000000101)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 1
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+Transition system state 8
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 1
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 0
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 1
+  Verilog::rtfSimpleUart.stb_i = 1
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 'hFFDD0A07 (11111111110111010000101000000111)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 1
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+Transition system state 9
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 1
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 0
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 1
+  Verilog::rtfSimpleUart.stb_i = 1
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 'hFFDC0A40 (11111111110111000000101001000000)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 1
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+Transition system state 10
+----------------------------------------------------
+  Verilog::rtfSimpleUart.pClkFreq = ?
+  Verilog::rtfSimpleUart.pBaud = ?
+  Verilog::rtfSimpleUart.pClkMul = ?
+  Verilog::rtfSimpleUart.pRts = ?
+  Verilog::rtfSimpleUart.pDtr = ?
+  Verilog::rtfSimpleUart.cs = 0
+  Verilog::rtfSimpleUart.c = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.ck_mul = 0 (000000000000000000000000)
+  Verilog::rtfSimpleUart.spr = 0 (00000000)
+  Verilog::rtfSimpleUart.tx_empty = 0
+  Verilog::rtfSimpleUart.baud16 = 0
+  Verilog::rtfSimpleUart.rx_present_ie = 1
+  Verilog::rtfSimpleUart.tx_empty_ie = 1
+  Verilog::rtfSimpleUart.dcd_ie = 0
+  Verilog::rtfSimpleUart.hwfc = 0
+  Verilog::rtfSimpleUart.loopback = 0
+  Verilog::rtfSimpleUart.clear = 0
+  Verilog::rtfSimpleUart.frame_err = 0
+  Verilog::rtfSimpleUart.over_run = 0
+  Verilog::rtfSimpleUart.ctsx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcdx = 2'b1 (01)
+  Verilog::rtfSimpleUart.dsrx = 2'b0 (00)
+  Verilog::rtfSimpleUart.dcd_chg = 1
+  Verilog::rtfSimpleUart.rxIRQ = 0
+  Verilog::rtfSimpleUart.txIRQ = 0
+  Verilog::rtfSimpleUart.msIRQ = 0
+  Verilog::rtfSimpleUart.irqenc = 3'b0 (000)
+  Verilog::rtfSimpleUart.rx_do = 0 (00000000)
+  Verilog::rtfSimpleUart.txrx = 0
+  Verilog::rtfSimpleUart.txd_int = 1
+  Verilog::rtfSimpleUart.rxd_int = 0
+  Verilog::rtfSimpleUart.cts_nint = 0
+  Verilog::rtfSimpleUart.rst_i = 0
+  Verilog::rtfSimpleUart.clk_i = 0
+  Verilog::rtfSimpleUart.cyc_i = 1
+  Verilog::rtfSimpleUart.stb_i = 1
+  Verilog::rtfSimpleUart.we_i = 0
+  Verilog::rtfSimpleUart.adr_i = 'hFFDC0A8C (11111111110111000000101010001100)
+  Verilog::rtfSimpleUart.dat_i = 0 (00000000)
+  Verilog::rtfSimpleUart.dat_o = 0 (00000000)
+  Verilog::rtfSimpleUart.ack_o = 0
+  Verilog::rtfSimpleUart.vol_o = 0
+  Verilog::rtfSimpleUart.irq_o = 0
+  Verilog::rtfSimpleUart.cts_ni = 0
+  Verilog::rtfSimpleUart.rts_no = 0
+  Verilog::rtfSimpleUart.dsr_ni = 0
+  Verilog::rtfSimpleUart.dcd_ni = 0
+  Verilog::rtfSimpleUart.dtr_no = 1
+  Verilog::rtfSimpleUart.rxd_i = 0
+  Verilog::rtfSimpleUart.txd_o = 1
+  Verilog::rtfSimpleUart.data_present_o = 0
+
+VERIFICATION FAILED

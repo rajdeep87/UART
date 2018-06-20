@@ -1,0 +1,131 @@
+$date
+  Thu Aug 25 10:31:54 2016
+$end
+$timescale
+  1ns
+$end
+$scope module rtfSimpleUart $end
+  $var wire 32 rtfSimpleUart.pClkFreq rtfSimpleUart.pClkFreq [0:31] $end
+  $var wire 32 rtfSimpleUart.pBaud rtfSimpleUart.pBaud [0:31] $end
+  $var wire 32 rtfSimpleUart.pClkMul rtfSimpleUart.pClkMul [0:31] $end
+  $var wire 32 rtfSimpleUart.pRts rtfSimpleUart.pRts [0:31] $end
+  $var wire 32 rtfSimpleUart.pDtr rtfSimpleUart.pDtr [0:31] $end
+  $var wire 1 rtfSimpleUart.cs rtfSimpleUart.cs $end
+  $var reg 24 rtfSimpleUart.c rtfSimpleUart.c [23:0] $end
+  $var reg 24 rtfSimpleUart.ck_mul rtfSimpleUart.ck_mul [23:0] $end
+  $var reg 8 rtfSimpleUart.spr rtfSimpleUart.spr [7:0] $end
+  $var wire 1 rtfSimpleUart.tx_empty rtfSimpleUart.tx_empty $end
+  $var wire 1 rtfSimpleUart.baud16 rtfSimpleUart.baud16 $end
+  $var reg 1 rtfSimpleUart.rx_present_ie rtfSimpleUart.rx_present_ie $end
+  $var reg 1 rtfSimpleUart.tx_empty_ie rtfSimpleUart.tx_empty_ie $end
+  $var reg 1 rtfSimpleUart.dcd_ie rtfSimpleUart.dcd_ie $end
+  $var reg 1 rtfSimpleUart.hwfc rtfSimpleUart.hwfc $end
+  $var reg 1 rtfSimpleUart.loopback rtfSimpleUart.loopback $end
+  $var wire 1 rtfSimpleUart.clear rtfSimpleUart.clear $end
+  $var wire 1 rtfSimpleUart.frame_err rtfSimpleUart.frame_err $end
+  $var wire 1 rtfSimpleUart.over_run rtfSimpleUart.over_run $end
+  $var reg 2 rtfSimpleUart.ctsx rtfSimpleUart.ctsx [1:0] $end
+  $var reg 2 rtfSimpleUart.dcdx rtfSimpleUart.dcdx [1:0] $end
+  $var reg 2 rtfSimpleUart.dsrx rtfSimpleUart.dsrx [1:0] $end
+  $var wire 1 rtfSimpleUart.dcd_chg rtfSimpleUart.dcd_chg $end
+  $var wire 1 rtfSimpleUart.rxIRQ rtfSimpleUart.rxIRQ $end
+  $var wire 1 rtfSimpleUart.txIRQ rtfSimpleUart.txIRQ $end
+  $var wire 1 rtfSimpleUart.msIRQ rtfSimpleUart.msIRQ $end
+  $var wire 3 rtfSimpleUart.irqenc rtfSimpleUart.irqenc [2:0] $end
+  $var wire 8 rtfSimpleUart.rx_do rtfSimpleUart.rx_do [7:0] $end
+  $var wire 1 rtfSimpleUart.txrx rtfSimpleUart.txrx $end
+  $var wire 1 rtfSimpleUart.txd_int rtfSimpleUart.txd_int $end
+  $var wire 1 rtfSimpleUart.rxd_int rtfSimpleUart.rxd_int $end
+  $var wire 1 rtfSimpleUart.cts_nint rtfSimpleUart.cts_nint $end
+  $var wire 1 rtfSimpleUart.rst_i rtfSimpleUart.rst_i $end
+  $var wire 1 rtfSimpleUart.clk_i rtfSimpleUart.clk_i $end
+  $var wire 1 rtfSimpleUart.cyc_i rtfSimpleUart.cyc_i $end
+  $var wire 1 rtfSimpleUart.stb_i rtfSimpleUart.stb_i $end
+  $var wire 1 rtfSimpleUart.we_i rtfSimpleUart.we_i $end
+  $var wire 32 rtfSimpleUart.adr_i rtfSimpleUart.adr_i [31:0] $end
+  $var wire 8 rtfSimpleUart.dat_i rtfSimpleUart.dat_i [7:0] $end
+  $var wire 8 rtfSimpleUart.dat_o rtfSimpleUart.dat_o [7:0] $end
+  $var wire 1 rtfSimpleUart.ack_o rtfSimpleUart.ack_o $end
+  $var wire 1 rtfSimpleUart.vol_o rtfSimpleUart.vol_o $end
+  $var wire 1 rtfSimpleUart.irq_o rtfSimpleUart.irq_o $end
+  $var wire 1 rtfSimpleUart.cts_ni rtfSimpleUart.cts_ni $end
+  $var reg 1 rtfSimpleUart.rts_no rtfSimpleUart.rts_no $end
+  $var wire 1 rtfSimpleUart.dsr_ni rtfSimpleUart.dsr_ni $end
+  $var wire 1 rtfSimpleUart.dcd_ni rtfSimpleUart.dcd_ni $end
+  $var reg 1 rtfSimpleUart.dtr_no rtfSimpleUart.dtr_no $end
+  $var wire 1 rtfSimpleUart.rxd_i rtfSimpleUart.rxd_i $end
+  $var wire 1 rtfSimpleUart.txd_o rtfSimpleUart.txd_o $end
+  $var wire 1 rtfSimpleUart.data_present_o rtfSimpleUart.data_present_o $end
+$upscope $end
+$enddefinitions $end
+#0
+0rtfSimpleUart.cs
+b000000000000000000000000 rtfSimpleUart.c
+b000000000000000000000000 rtfSimpleUart.ck_mul
+b00000000 rtfSimpleUart.spr
+0rtfSimpleUart.tx_empty
+0rtfSimpleUart.baud16
+1rtfSimpleUart.rx_present_ie
+1rtfSimpleUart.tx_empty_ie
+0rtfSimpleUart.dcd_ie
+0rtfSimpleUart.hwfc
+0rtfSimpleUart.loopback
+0rtfSimpleUart.clear
+0rtfSimpleUart.frame_err
+0rtfSimpleUart.over_run
+b00 rtfSimpleUart.ctsx
+b01 rtfSimpleUart.dcdx
+b00 rtfSimpleUart.dsrx
+1rtfSimpleUart.dcd_chg
+0rtfSimpleUart.rxIRQ
+0rtfSimpleUart.txIRQ
+0rtfSimpleUart.msIRQ
+b000 rtfSimpleUart.irqenc
+b00000000 rtfSimpleUart.rx_do
+0rtfSimpleUart.txrx
+1rtfSimpleUart.txd_int
+0rtfSimpleUart.rxd_int
+0rtfSimpleUart.cts_nint
+1rtfSimpleUart.rst_i
+0rtfSimpleUart.clk_i
+0rtfSimpleUart.cyc_i
+1rtfSimpleUart.stb_i
+0rtfSimpleUart.we_i
+b00000000000000000000000000000000 rtfSimpleUart.adr_i
+b00000000 rtfSimpleUart.dat_i
+b00000000 rtfSimpleUart.dat_o
+0rtfSimpleUart.ack_o
+0rtfSimpleUart.vol_o
+0rtfSimpleUart.irq_o
+0rtfSimpleUart.cts_ni
+0rtfSimpleUart.rts_no
+0rtfSimpleUart.dsr_ni
+0rtfSimpleUart.dcd_ni
+1rtfSimpleUart.dtr_no
+0rtfSimpleUart.rxd_i
+1rtfSimpleUart.txd_o
+0rtfSimpleUart.data_present_o
+#1
+0rtfSimpleUart.txd_int
+0rtfSimpleUart.rst_i
+0rtfSimpleUart.stb_i
+0rtfSimpleUart.txd_o
+#2
+#3
+#4
+#5
+1rtfSimpleUart.txd_int
+1rtfSimpleUart.cyc_i
+1rtfSimpleUart.stb_i
+b11011111110111000000101000000010 rtfSimpleUart.adr_i
+1rtfSimpleUart.txd_o
+#6
+b11111011110111000000101000000010 rtfSimpleUart.adr_i
+#7
+b11111111110111000000100000000101 rtfSimpleUart.adr_i
+#8
+b11111111110111010000101000000111 rtfSimpleUart.adr_i
+#9
+b11111111110111000000101001000000 rtfSimpleUart.adr_i
+#10
+b11111111110111000000101010001100 rtfSimpleUart.adr_i
